@@ -27,8 +27,8 @@
         Spørgeskemaet er baseret på Entwistle NJ forskning "The approaches and study skills inventory for students (ASSIST)". Edinburgh: Centre for Research on Learning and Instruction, University of Edinburgh, 1997.
     </details>
 
-    <div class="questions">
         <form action="result.html">
+          <div class="questions carousel-viewport">
             <fieldset class="question">
 
                 <legend class="question-text">
@@ -51,15 +51,15 @@
                     <label class="option"><input type="radio" name="que2" value="strategisk">c) Et overblik over, hvad der sandsynligvis bliver eksamensrelevant (Strategisk) </label>
                 </div>
 
-                <div class="options">
-                    <legend class="question-text">
-                        3. Det er aften før deadline, og du er bagud med en opgave.
-                    </legend>
-
-                    <label class="option"><input type="radio" name="que3" value="dyb" required>a) Jeg prioriterer det, der tæller mest i bedømmelsen, og skærer resten væk (Strategisk)</label>
+                  <legend class="question-text">
+                    3. Det er aften før deadline, og du er bagud med en opgave.
+                  </legend>
+                  <div class="options">
+                    <label class="option"><input type="radio" name="que3" value="strategisk" required> a) Jeg prioriterer det, der tæller mest i bedømmelsen, og skærer resten væk (Strategisk)</label>
                     <label class="option"><input type="radio" name="que3" value="overfladisk"> b) Jeg arbejder mig igennem det hele i den rækkefølge, det står i opgaven (Overfladisk)</label>
-                    <label class="option"><input type="radio" name="que3" value="strategisk"> c) Jeg bliver ved med det svære punkt, for jeg vil faktisk forstå det, før jeg går videre (Dyb) </label>
-                </div>
+                    <label class="option"><input type="radio" name="que3" value="dyb"> c) Jeg bliver ved med det svære punkt, for jeg vil faktisk forstå det, før jeg går videre (Dyb)</label>
+                  </div>
+
 
               <legend class="question-text">
                 4. Underviseren stiller et spørgsmål, du ikke kender svaret på.
@@ -145,15 +145,8 @@
             <button>Send svar</button>
             </fieldset>
         </form>
-
-    </div>
-
-
-
-</div>
-
-
-
+  </div>
+  </div>
 
 
 </body>

@@ -1,14 +1,37 @@
+body{
+  font-family: Calibri;
+
+}
+
 .options{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.option:has(input:checked){
-  background-color: #CBA3FF;
 
+
+.logo {
+  width: 300px;
+  height: auto;
 }
 
+.page {
+  margin: 0 auto;
+  padding: 1em;
+  font-family: "Oso Serif Light", Georgia, "Times New Roman", serif;
+}
+
+
+.option:has(input:checked){
+  background-color: var(--mindfulBreak);
+}
+
+.option:has(input:hover){
+  background-color: var(--mindfulBreakLight);
+}
+
+
 html{
-  background: #b3d4fc;
+  background: #ffffff;
 }
 
 body{
@@ -19,10 +42,20 @@ body{
 .question {
   margin: 1em 0;
   font-size: large;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
 }
+
 
 .question-text {
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: #CBA3FF;
+  color: #551fca;
+}
+
+.carousel-viewport{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
 }
