@@ -1,0 +1,28 @@
+.options{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.option:has(input:checked){
+  background-color: #CBA3FF;
+
+}
+
+html{
+  background: #b3d4fc;
+}
+
+body{
+  font-family: Calibri;
+
+}
+
+.question {
+  margin: 1em 0;
+  font-size: large;
+}
+
+.question-text {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #CBA3FF;
+}
